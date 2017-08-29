@@ -54,6 +54,7 @@ RUN     buildDeps="autoconf \
                    perl \
                    openssl-devel \
                    tar \
+                   vim \
                    yasm \
                    which \
                    zlib-devel" && \
