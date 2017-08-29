@@ -9,8 +9,8 @@ RUN apt-get -y install autoconf automake build-essential libass-dev libfreetype6
 # Make ffmpeg_sources directory
 RUN mkdir ~/ffmpeg_sources
 
-# Install yasm
-RUN apt-get -y install yasm
+# Install nasm
+RUN apt-get -y install nasm
 
 # Install the libx264 library
 RUN cd ~/ffmpeg_sources && wget http://download.videolan.org/pub/x264/snapshots/last_x264.tar.bz2 && tar xjvf last_x264.tar.bz2 && cd x264-snapshot* && ./configure --prefix="$HOME/ffmpeg_build" --bindir="$HOME/bin" --enable-static && make && make install && make distclean
