@@ -49,7 +49,7 @@ RUN cd ~/ffmpeg_sources && \
     --enable-libvpx \
     --enable-libx264 \
     --enable-nonfree \
-    --enable-x11grab && \
+    --enable-libxcb && \
     PATH="$HOME/bin:$PATH" make && \
     make install && \
     make distclean && \
