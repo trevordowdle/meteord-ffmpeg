@@ -1,4 +1,4 @@
-FROM abernix/meteord:base
+FROM abernix/meteord:node-8.4.0-base
 
 RUN apt-get update && \
     apt-get -y install autoconf automake build-essential libass-dev libfreetype6-dev libgpac-dev \
